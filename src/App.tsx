@@ -1,12 +1,17 @@
-import './App.css'
+// src/App.tsx
 
-function App() {
+import React from 'react';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import Navbar from './component/Navbar/Navbar';
 
+const App: React.FC = () => {
   return (
-    <>
-      <h4>Hello</h4>
-    </>
-  )
-}
+    <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+      <div className="app">
+        <Navbar />
+      </div>
+    </GoogleOAuthProvider>
+  );
+};
 
-export default App
+export default App;
