@@ -18,13 +18,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section className="hero-section">
-      <div className="hero-content">
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <button onClick={onButtonClick}>{buttonText}</button>
-      </div>
-      <div className="hero-image">
-        <img src={imageUrl} alt={title} />
+      <div className="hero-section-content">
+        <div className="hero-content">
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <button onClick={onButtonClick}>{buttonText}</button>
+        </div>
+        <div className="hero-image">
+          <img src={imageUrl} alt={title} />
+        </div>
       </div>
     </section>
   );
