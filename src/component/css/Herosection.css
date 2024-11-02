@@ -1,30 +1,43 @@
-.hero-section-content {
+.hero-section{
+    width:100%;
+    background-color: #ffffff;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding: 40px;
-    background-color: #f4f4f9;
-    width:100%;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
     height:88vh;
+    margin:0 auto;
   }
   
   .hero-content {
-    width: 60%;
+    width: 40%;
   }
   
   .hero-content h1 {
     font-size: 2.5rem;
     color: #333;
+    margin-bottom: 1rem;
   }
-  
+
   .hero-content p {
     font-size: 1.2rem;
-    margin: 20px 0;
-    color: #666;
+    margin-bottom: 1.5rem;
+    color: #000000;
   }
   
+
   .hero-content button {
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     color: white;
     background-color: #0056b3;
@@ -33,7 +46,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+
   .hero-content button:hover {
     background-color: #004494;
   }
@@ -45,6 +58,71 @@
   .hero-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive pour tablettes */
+  @media (max-width: 1024px) {
+    .hero-section-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-content{
+        width: 100%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .hero-content button {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.2rem;
+    }
+  
+    .hero-image img {
+      max-width: 400px;
+    }
+  }
+  
+  /* Responsive pour mobiles */
+  @media (max-width: 768px) {
+
+    .hero-section-content {
+        max-width: 100%;
+        padding:0;
+        margin-top:3rem;
+      }
+    .hero-content{
+        width: 100%;
+        margin-top:-3rem;
+        text-align: justify;
+    }
+    .hero-content h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .hero-content button {
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+      margin:0 5rem;
+    }
+    .hero-image {
+        max-width: 100%;
+        margin-top:-3rem;
+      }
+    .hero-image img {
+      max-width: 80%;
+    }
   }
   

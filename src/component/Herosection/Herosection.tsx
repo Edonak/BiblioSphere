@@ -1,5 +1,5 @@
 import React from "react";
-import "../../component/css/Herosection.css"; // Pour les styles CSS (voir ci-dessous)
+import "../../component/css/Herosection.css";
 
 type HeroSectionProps = {
   title: string;
@@ -33,3 +33,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 };
 
 export default HeroSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
