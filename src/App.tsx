@@ -13,7 +13,7 @@ const App: React.FC = () => {
       </div>
       <div className="">
         <HeroSection
-          title="Bienvenue à notre plateforme"
+          title="Bienvenue à BiblioSphere"
           description="Le livre, au-delà du simple plaisir de lire, 
           est un compagnon précieux dans la lutte contre l’illettrisme 
           et un outil puissant pour le développement global de l’individu, 
