@@ -4,6 +4,7 @@ import React from "react";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import Navbar from "./component/Navbar/Navbar";
 import HeroSection from "./component/Herosection/Herosection";
+import BookCatalog from "./component/BookList/BookCatalogue/BookCatalogue";
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
           imageUrl="./../public/images/imageHerosection.png"
           onButtonClick={() => alert("Bouton cliqué !")}
         />
+        <BookCatalog />
       </div>
     </GoogleOAuthProvider>
   );
