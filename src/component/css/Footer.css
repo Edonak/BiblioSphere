@@ -1,0 +1,55 @@
+/* Style de base du footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Logo du footer */
+  .footer-logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* Section de réseaux sociaux */
+  .footer-socials {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Changer la couleur lors du survol */
+  }
+  
+  /* Bouton Haut de page */
+  .footer-back-to-top {
+    display: flex;
+  }
+  
+  .back-to-top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #0056b3;
+  }
+  

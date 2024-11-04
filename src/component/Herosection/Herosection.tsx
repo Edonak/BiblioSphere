@@ -1,20 +1,21 @@
 import React from "react";
 import "../../component/css/Herosection.css";
+import Button from "../Default/Button";
 
 type HeroSectionProps = {
   title: string;
   description: string;
   buttonText: string;
   imageUrl: string;
-  onButtonClick: () => void;
 };
-
+const handleClick = () => {
+  console.log("Bouton cliqué !");
+};
 const HeroSection: React.FC<HeroSectionProps> = ({
+  
   title,
   description,
-  buttonText,
-  imageUrl,
-  onButtonClick,
+  imageUrl
 }) => {
   return (
     <section className="hero-section">
@@ -22,7 +23,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="hero-content">
           <h1>{title}</h1>
           <p>{description}</p>
-          <button onClick={onButtonClick}>{buttonText}</button>
+          <Button
+            label="Visiter la bibliothèque"
+            onClick={handleClick}
+            color="#ffffff"
+            backgroundColor="rgba(70, 105, 159, 1)"
+          />
         </div>
         <div className="hero-image">
           <img src={imageUrl} alt={title} />

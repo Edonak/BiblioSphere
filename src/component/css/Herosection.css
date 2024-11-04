@@ -41,12 +41,6 @@
 
   .hero-content button {
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    color: white;
-    background-color: #46699F;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
     margin:0 5rem;
   }

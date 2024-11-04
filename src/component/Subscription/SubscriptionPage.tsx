@@ -1,11 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../css/SubscriptionPage.css";
+import Button from "../Default/Button";
 
 const SubscriptionPage: React.FC = () => {
+  const handleClick = () => {
+    console.log("Bouton cliqué !");
+  };
   return (
     <section className="subscription-page">
-      <h2>Abonnez vous dès maintenant <br></br> Et ayez accès à nos livres</h2>
+      <h2>
+        Abonnez vous dès maintenant <br></br> Et ayez accès à nos livres
+      </h2>
       <div className="subsciption-container">
         <div className="benefits-section">
           <h3>Les Avantages de la Lecture</h3>
@@ -28,9 +33,13 @@ const SubscriptionPage: React.FC = () => {
             <li>Possibilité de créer votre propre collection de livres</li>
             <li>Notifications lorsque nous téléchargeons de nouveaux livres</li>
           </ul>
-          <Link to="/all-subscriptions" className="subscription-button">
-            Voir tous les abonnements
-          </Link>
+
+          <Button
+            label="Voir tous les abonnements"
+            onClick={handleClick}
+            color="#ffffff"
+            backgroundColor="rgba(70, 105, 159, 1)"
+          />
         </div>
       </div>
     </section>

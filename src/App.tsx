@@ -6,6 +6,7 @@ import Navbar from "./component/Navbar/Navbar";
 import HeroSection from "./component/Herosection/Herosection";
 import BookCatalog from "./component/BookList/BookCatalogue/BookCatalogue";
 import SubscriptionPage from "./component/Subscription/SubscriptionPage";
+import Footer from "./component/Footer/Footer";
 
 const App: React.FC = () => {
   return (
@@ -25,10 +26,11 @@ const App: React.FC = () => {
           l'esprit et à la construction d'une société éclairée."
           buttonText="Visiter le Bibliothèque"
           imageUrl="./../public/images/imageHerosection.png"
-          onButtonClick={() => alert("Bouton cliqué !")}
         />
         <BookCatalog />
         <SubscriptionPage />
+
+        <Footer />
       </div>
     </GoogleOAuthProvider>
   );

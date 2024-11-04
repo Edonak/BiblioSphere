@@ -4,8 +4,8 @@ import '../css/Button.css';
 type ButtonProps = {
   label: string;
   onClick: () => void;
-  color?: string; // couleur personnalisable
-  backgroundColor?: string; // couleur de fond personnalisable
+  color?: string; 
+  backgroundColor?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({ label, onClick, color = '#ffffff', backgroundColor = '#007bff' }) => {
@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, color = '#ffffff', back
     <button
       className="custom-button"
       onClick={onClick}
-      style={{ color, backgroundColor }} // styles dynamiques
+      style={{ color, backgroundColor }} 
     >
       {label}
     </button>
