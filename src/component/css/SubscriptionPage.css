@@ -1,0 +1,73 @@
+/* Styles de base pour la page d'abonnement */
+.subsciption-container {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    padding: 2rem;
+    
+  }
+  .subscription-page{
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .benefits-section {
+    flex: 1;
+  }
+  
+  .benefits-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .benefits-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+  }
+  
+  .subscription-details {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .subscription-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-details p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subscription-details ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .subscription-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscription-button:hover {
+    background-color: #0056b3;
+  }
+  

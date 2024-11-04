@@ -1,0 +1,50 @@
+/* Styles de base pour la page de tous les abonnements */
+.all-subscriptions-page {
+    padding: 2rem;
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  .all-subscriptions-page h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .subscription-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .subscription-card {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .subscription-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .subscription-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subscription-card ul li {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  

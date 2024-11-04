@@ -5,6 +5,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import Navbar from "./component/Navbar/Navbar";
 import HeroSection from "./component/Herosection/Herosection";
 import BookCatalog from "./component/BookList/BookCatalogue/BookCatalogue";
+import SubscriptionPage from "./component/Subscription/SubscriptionPage";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
           onButtonClick={() => alert("Bouton cliqué !")}
         />
         <BookCatalog />
+        <SubscriptionPage />
       </div>
     </GoogleOAuthProvider>
   );
