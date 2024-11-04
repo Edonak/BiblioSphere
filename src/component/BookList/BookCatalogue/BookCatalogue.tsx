@@ -10,12 +10,12 @@ type CatalogItem = {
 };
 
 const catalogItems: CatalogItem[] = [
-  { id: 1, name: 'Mathématique', imageUrl: './../../../../public/images/mathematique.jpeg', link: '/catalog/math' },
+  { id: 1, name: 'Mathématique', imageUrl: './../../../../public/images/mathematique.png', link: '/catalog/math' },
   { id: 2, name: 'Littérature', imageUrl: './../../../../public/images/Littérature.jpg', link: '/catalog/litterature' },
   { id: 3, name: 'Technique', imageUrl: './../../../../public/images/Technique.jpeg', link: '/catalog/technique' },
-  { id: 4, name: 'Science', imageUrl: './../../../../public/images/Science.jpeg', link: '/catalog/science' },
+  { id: 4, name: 'Science', imageUrl: './../../../../public/images/Science.png', link: '/catalog/science' },
   { id: 5, name: 'Langue', imageUrl: './../../../../public/images/Langue.jpeg', link: '/catalog/langue' },
-  { id: 6, name: 'Histoire', imageUrl: './../../../../public/images/Histoire.jpeg', link: '/catalog/histoire' },
+  { id: 6, name: 'Histoire', imageUrl: './../../../../public/images/Histoire.png', link: '/catalog/histoire' },
 ];
 
 const BookCatalog: React.FC = () => {
