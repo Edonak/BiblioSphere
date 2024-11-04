@@ -5,7 +5,7 @@ import "../css/SubscriptionPage.css";
 const SubscriptionPage: React.FC = () => {
   return (
     <section className="subscription-page">
-      <h2>Les Avantages de la Lecture</h2>
+      <h2>Abonnez vous dès maintenant <br></br> Et ayez accès à nos livres</h2>
       <div className="subsciption-container">
         <div className="benefits-section">
           <h3>Les Avantages de la Lecture</h3>

@@ -21,7 +21,7 @@ const catalogItems: CatalogItem[] = [
 const BookCatalog: React.FC = () => {
   return (
     <section className="catalog">
-      <h1>Notre Catalogue</h1>
+      <h3>Notre Catalogue</h3>
       <div className="catalog-grid">
         {catalogItems.map(item => (
           <div key={item.id} className="catalog-item">

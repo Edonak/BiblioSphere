@@ -1,15 +1,20 @@
 /* Styles de base pour la page d'abonnement */
 .subsciption-container {
     display: flex;
-    justify-content:center;
-    gap: 2rem;
-    padding: 2rem;
-    
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 5rem;
+    text-align: justify;
+    margin:0 auto;
+  }
+  h2{
+    text-align: center;
   }
   .subscription-page{
     gap: 2rem;
-    padding: 2rem;
-    background-color: #f4f4f9;
+    padding: 4rem;
+    background-color: #ffffff;
+    height: 80vh;
   }
   
   .benefits-section {
@@ -29,7 +34,6 @@
   }
   
   .subscription-details {
-    flex: 1;
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;

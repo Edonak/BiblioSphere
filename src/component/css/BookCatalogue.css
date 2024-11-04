@@ -5,10 +5,10 @@
     background-color: rgba(70, 105, 159, 0.1);
   }
   
-  .catalog h1 {
-    font-size: 2.5rem;
+  .catalog h3 {
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: black;
   }
   
   /* Grille pour organiser les items en 2 lignes et 3 colonnes */
