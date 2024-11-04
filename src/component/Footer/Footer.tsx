@@ -17,16 +17,16 @@ const Footer: React.FC = () => {
       {/* Réseaux Sociaux */}
       <div className="footer-socials">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebook className="social-icon" />
+          <FaFacebook className="social-icon-facebook" />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="social-icon" />
+          <FaTwitter className="social-icon-twitter" />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="social-icon" />
+          <FaInstagram className="social-icon-instagram" />
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="social-icon" />
+          <FaLinkedin className="social-icon-linkdin" />
         </a>
       </div>
 
