@@ -1,4 +1,4 @@
-/* src/components/css/Navbar.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -44,8 +44,8 @@
     color: #46699F;
     font-weight: bold;
     padding: 10px 15px;
-    display: block; /* Rend toute la zone cliquable */
-    transition: color 0.3s; /* Ajoute une transition douce pour la couleur */
+    display: block; 
+    transition: color 0.3s;
   }
   
   .nav-menu a:hover {

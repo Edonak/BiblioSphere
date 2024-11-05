@@ -9,12 +9,9 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer">
-      {/* Logo */}
       <div className="footer-logo">
         <img src="./../../../public/images/2-removebg-preview.png" alt="Logo" />
       </div>
-
-      {/* Réseaux Sociaux */}
       <div className="footer-socials">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="social-icon-facebook" />
@@ -29,8 +26,6 @@ const Footer: React.FC = () => {
           <FaLinkedin className="social-icon-linkdin" />
         </a>
       </div>
-
-      {/* Bouton pour remonter en haut */}
       <div className="footer-back-to-top">
         <button onClick={scrollToTop} className="back-to-top-button">
           <FaArrowUp />

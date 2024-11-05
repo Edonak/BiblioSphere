@@ -19,10 +19,6 @@ const Navbar: React.FC = () => {
           <li><a href="/">Accueil</a></li>
           <li>
             <a href="#">Bibliothèque</a>
-            <ul className="dropdown">
-              <li><a href="/livres">Livres</a></li>
-              <li><a href="/auteurs">Auteurs</a></li>
-            </ul>
           </li>
           <li><a href="/contact">Nous Contacter</a></li>
         </ul>
