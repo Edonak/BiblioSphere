@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/BookCatalogue.css';
 
@@ -19,11 +19,19 @@ const catalogItems: CatalogItem[] = [
 ];
 
 const BookCatalog: React.FC = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
+  const visibleItems = showAll ? catalogItems : catalogItems.slice(0, 3);
+
   return (
     <section className="catalog">
       <h3>Notre Catalogue</h3>
       <div className="catalog-grid">
-        {catalogItems.map(item => (
+        {visibleItems.map((item) => (
           <div key={item.id} className="catalog-item">
             <img src={item.imageUrl} alt={item.name} className="catalog-image" />
             <div className="catalog-overlay">
@@ -34,6 +42,9 @@ const BookCatalog: React.FC = () => {
           </div>
         ))}
       </div>
+      <button className="toggle-button" onClick={toggleShowAll}>
+        {showAll ? 'Voir moins' : 'Voir plus'}
+      </button>
     </section>
   );
 };

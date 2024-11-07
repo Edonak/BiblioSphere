@@ -70,3 +70,44 @@
     background-color: #0056b3;
   }
   
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-socials {
+    gap: 10px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .footer-back-to-top .back-to-top-button {
+    font-size: 20px;
+  }
+}
+
+/* Small Screens and Mobile Devices */
+@media (max-width: 480px) {
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-socials a {
+    font-size: 20px;
+  }
+
+  .footer-back-to-top .back-to-top-button {
+    font-size: 20px;
+  }
+}

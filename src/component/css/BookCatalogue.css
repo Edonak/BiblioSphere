@@ -8,7 +8,7 @@
   .catalog h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: black;
+    color: ;
   }
   
   /* Grille pour organiser les items en 2 lignes et 3 colonnes */
@@ -64,17 +64,92 @@
   .catalog-link:hover {
     color: #ddd;
   }
-  
-  /* Responsive pour écrans plus petits */
-  @media (max-width: 768px) {
-    .catalog-grid {
-      grid-template-columns: 1fr; /* 1 colonne sur mobile */
-    }
+
+
+/* Styles de base */
+.catalog {
+  padding: 2rem;
+  text-align: center;
+}
+
+.catalog h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.catalog-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.catalog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.catalog-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.catalog-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.catalog-image:hover {
+  transform: scale(1.05);
+}
+
+/* Bouton Voir Plus */
+.toggle-button {
+  display:none
+}
+
+/* Styles réactifs */
+@media (max-width: 768px) {
+  /* Pour les écrans moyens */
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
   }
-  
-  @media (max-width: 1024px) {
-    .catalog-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
-    }
+}
+
+@media (max-width: 480px) {
+  /* Pour les écrans petits */
+  .catalog-grid {
+    grid-template-columns: 1fr; /* Une seule colonne */
   }
-  
+
+  .catalog h3 {
+    font-size: 1.5rem;
+  }
+
+  .toggle-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .toggle-button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display:block
+  }
+  .toggle-button:hover {
+    background-color: #357ab8;
+  }
+}
