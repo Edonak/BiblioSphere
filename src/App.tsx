@@ -7,7 +7,7 @@ import HeroSection from "./component/Herosection/Herosection";
 import BookCatalog from "./component/BookList/BookCatalogue/BookCatalogue";
 import SubscriptionPage from "./component/Subscription/SubscriptionPage";
 import Footer from "./component/Footer/Footer";
-import AdminDashboard from "./pages/Dashboard/AdminDashboard";
+// import AdminDashboard from "./pages/Dashboard/AdminDashboard";
 // import LibraryPage from "./pages/Library";
 
 const App: React.FC = () => {
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <BookCatalog />
         <SubscriptionPage />
         {/* <LibraryPage /> */}
-        <AdminDashboard />
+        {/* <AdminDashboard /> */}
         <Footer />
       </div>
     </GoogleOAuthProvider>

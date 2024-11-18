@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./../../component/css/Dashboard.css";
 import BookForm from "../../component/Subscription/GeneralComponent/BookForm";
+import { books } from "./../../data/books";
+import { Book } from "./../../types/book";
 
 const AdminDashboard: React.FC = () => {
   const [bookList, setBookList] = useState(books);
